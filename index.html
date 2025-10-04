@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AstroVerse Explorer</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Stars Background -->
+<div class="stars"></div>
+
+<div class="container">
+
+  <h1>Who are you checking for? 🌙</h1>
+  <div class="choice-buttons">
+    <button id="myself">For Myself</button>
+    <button id="couple">For Couple</button>
+    <button id="solar">Solar System</button>
+  </div>
+
+  <!-- Moon / Solar System Container -->
+  <div class="moon-container" id="moonContainer"></div>
+
+  <!-- Thank you Section -->
+  <div class="thankyou" id="thankyou">
+    <h2>Thank You!</h2>
+    <div class="buttons">
+      <button onclick="window.location.href='mailto:harshitaaaarya@gmail.com'">Give Feedback</button>
+      <button id="followBtn">Follow Us</button>
+    </div>
+    <div class="social" id="socialLinks" style="display:none;">
+      <a href="https://www.instagram.com/___.harshita._.aarya?igsh=emd6ZDZpaDk0dTJ5" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com/in/harshita-aarya/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn"></a>
+    </div>
+  </div>
+
+  <!-- Chatbot Bubble -->
+  <div id="chatbotBubble">🤖 AstroBot</div>
+
+  <!-- Chatbot Window -->
+  <div id="chatbotWindow">
+    <div id="closeChat">✖</div>
+    <div id="chatContent">
+      <button id="showQuestionsBtn">Show Questions</button>
+      <div id="predefinedQuestions">
+        <h3>Click a question:</h3>
+        <ul>
+          <li class="question">How many planets are there in the Solar System?</li>
+          <li class="question">Which planet is closest to the Sun?</li>
+          <li class="question">Which planet is farthest from the Sun?</li>
+          <li class="question">What is the difference between a planet and a dwarf planet?</li>
+          <li class="question">Name the largest planet in the Solar System.</li>
+          <li class="question">Which planet is known as the “Red Planet”? Why?</li>
+          <li class="question">What causes the phases of the Moon?</li>
+          <li class="question">Explain the difference between comets and asteroids.</li>
+          <li class="question">Name the four inner planets. What do they have in common?</li>
+          <li class="question">Name the four outer planets. What do they have in common?</li>
+          <li class="question">What is a solar eclipse and a lunar eclipse? How do they occur?</li>
+        </ul>
+      </div>
+      <div id="chatMessages"></div>
+      <input type="text" id="userInput" placeholder="Type your question here...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
